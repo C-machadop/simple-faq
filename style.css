@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --link-color: #4e80ee;
+  --text-color: #030616;
+  --background-header: #ffffff;
+  --background-body: #f8fafc;
+  --border-color: #d2d5da;
+}
+
+body {
+  font-family: var(--font-family);
+  font-family: "Inter";
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-body);
+  color: var(--text-color);
+}
+
+body,
+header,
+main,
+ol,
+ul {
+  /* centra los elementos */
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  /* separa los elementos entre si */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--background-header);
+  height: 220px;
+  width: 100%;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 4.5rem 1.5rem;
+  gap: 2.5rem;
+}
+
+.wrapper {
+  gap: 2rem;
+}
+
+.wrapper ul {
+  padding-left: 1.5rem;
+}
+
+.wrapper ol {
+  list-style-position: inside;
+}
+
+.wrapper ul,
+ol {
+  gap: 0.5rem;
+}
+
+.wrapper ol li,
+.wrapper ul li {
+  line-height: 1.5;
+}
+
+.wrapper ul li span {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--border-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
